@@ -1,10 +1,10 @@
 <template>
-    <h1>This is the users page</h1>
+    <h1>A single user, with ID : {{ $route.params.id }}</h1>
 </template>
 
 <script>
     export default {
-        name: "users"
+        name: "_id"
     }
 </script>
 

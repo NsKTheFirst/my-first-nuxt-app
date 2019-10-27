@@ -23,6 +23,8 @@
         >
           GitHub
         </a>
+        <nuxt-link to="/users" class="button--grey">Users</nuxt-link>
+        <button @click="goToProductsPage">Products</button>
       </div>
     </div>
   </div>
@@ -34,6 +36,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  methods: {
+      goToProductsPage() {
+          this.$router.push('/products')
+      }
   }
 }
 </script>
